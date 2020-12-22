@@ -133,18 +133,18 @@ declare module 'react-google-maps/lib/components/Circle' {
         visible?: boolean
 
         onCenterChanged?(): void
-        onClick?(e: google.maps.MouseEvent): void
-        onDrag?(e: google.maps.MouseEvent): void
-        onDblClick?(e: google.maps.MouseEvent): void
-        onDragEnd?(e: google.maps.MouseEvent): void
-        onDragStart?(e: google.maps.MouseEvent): void
-        onMouseDown?(e: google.maps.MouseEvent): void
-        onMouseMove?(e: google.maps.MouseEvent): void
-        onMouseOut?(e: google.maps.MouseEvent): void
-        onMouseOver?(e: google.maps.MouseEvent): void
-        onMouseUp?(e: google.maps.MouseEvent): void
+        onClick?(e: google.maps.MapMouseEvent): void
+        onDrag?(e: google.maps.MapMouseEvent): void
+        onDblClick?(e: google.maps.MapMouseEvent): void
+        onDragEnd?(e: google.maps.MapMouseEvent): void
+        onDragStart?(e: google.maps.MapMouseEvent): void
+        onMouseDown?(e: google.maps.MapMouseEvent): void
+        onMouseMove?(e: google.maps.MapMouseEvent): void
+        onMouseOut?(e: google.maps.MapMouseEvent): void
+        onMouseOver?(e: google.maps.MapMouseEvent): void
+        onMouseUp?(e: google.maps.MapMouseEvent): void
         onRadiusChanged?(): void
-        onRightClick?(e: google.maps.MouseEvent): void
+        onRightClick?(e: google.maps.MapMouseEvent): void
     }
 
     export default class Circle extends Component<CircleProps> {
@@ -238,20 +238,20 @@ declare module 'react-google-maps/lib/components/GoogleMap' {
 
         onBoundsChanged?(): void
         onCenterChanged?(): void
-        onClick?(e: google.maps.MouseEvent | google.maps.IconMouseEvent): void
-        onDblClick?(e: google.maps.MouseEvent): void
+        onClick?(e: google.maps.MapMouseEvent | google.maps.IconMouseEvent): void
+        onDblClick?(e: google.maps.MapMouseEvent): void
         onDrag?(): void
         onDragEnd?(): void
         onDragStart?(): void
         onHeadingChanged?(): void
         onIdle?(): void
         onMapTypeIdChanged?(): void
-        onMouseMove?(e: google.maps.MouseEvent): void
-        onMouseOut?(e: google.maps.MouseEvent): void
-        onMouseOver?(e: google.maps.MouseEvent): void
+        onMouseMove?(e: google.maps.MapMouseEvent): void
+        onMouseOut?(e: google.maps.MapMouseEvent): void
+        onMouseOver?(e: google.maps.MapMouseEvent): void
         onProjectionChanged?(): void
         onResize?(): void
-        onRightClick?(e: google.maps.MouseEvent): void
+        onRightClick?(e: google.maps.MapMouseEvent): void
         onTilesLoaded?(): void
         onTiltChanged?(): void
         onZoomChanged?(): void
@@ -375,22 +375,22 @@ declare module 'react-google-maps/lib/components/Marker' {
         zIndex?: number
 
         onAnimationChanged?(): void
-        onClick?(e: google.maps.MouseEvent): void
+        onClick?(e: google.maps.MapMouseEvent): void
         onClickableChanged?(): void
         onCursorChanged?(): void
-        onDblClick?(e: google.maps.MouseEvent): void
-        onDrag?(e: google.maps.MouseEvent): void
+        onDblClick?(e: google.maps.MapMouseEvent): void
+        onDrag?(e: google.maps.MapMouseEvent): void
         onDraggableChanged?(): void
-        onDragEnd?(e: google.maps.MouseEvent): void
-        onDragStart?(e: google.maps.MouseEvent): void
+        onDragEnd?(e: google.maps.MapMouseEvent): void
+        onDragStart?(e: google.maps.MapMouseEvent): void
         onFlatChanged?(): void
         onIconChanged?(): void
-        onMouseDown?(e: google.maps.MouseEvent): void
-        onMouseOut?(e: google.maps.MouseEvent): void
-        onMouseOver?(e: google.maps.MouseEvent): void
-        onMouseUp?(e: google.maps.MouseEvent): void
+        onMouseDown?(e: google.maps.MapMouseEvent): void
+        onMouseOut?(e: google.maps.MapMouseEvent): void
+        onMouseOver?(e: google.maps.MapMouseEvent): void
+        onMouseUp?(e: google.maps.MapMouseEvent): void
         onPositionChanged?(): void
-        onRightClick?(e: google.maps.MouseEvent): void
+        onRightClick?(e: google.maps.MapMouseEvent): void
         onShapeChanged?(): void
         onTitleChanged?(): void
         onVisibleChanged?(): void
@@ -497,9 +497,9 @@ declare module 'react-google-maps/lib/components/Polygon' {
 
         onClick?(e: google.maps.PolyMouseEvent): void
         onDblClick?(e: google.maps.PolyMouseEvent): void
-        onDrag?(e: google.maps.MouseEvent): void
-        onDragEnd?(e: google.maps.MouseEvent): void
-        onDragStart?(e: google.maps.MouseEvent): void
+        onDrag?(e: google.maps.MapMouseEvent): void
+        onDragEnd?(e: google.maps.MapMouseEvent): void
+        onDragStart?(e: google.maps.MapMouseEvent): void
         onMouseDown?(e: google.maps.PolyMouseEvent): void
         onMouseMove?(e: google.maps.PolyMouseEvent): void
         onMouseOut?(e: google.maps.PolyMouseEvent): void
@@ -534,9 +534,9 @@ declare module 'react-google-maps/lib/components/Polyline' {
 
         onClick?(e: google.maps.PolyMouseEvent): void
         onDblClick?(e: google.maps.PolyMouseEvent): void
-        onDrag?(e: google.maps.MouseEvent): void
-        onDragEnd?(e: google.maps.MouseEvent): void
-        onDragStart?(e: google.maps.MouseEvent): void
+        onDrag?(e: google.maps.MapMouseEvent): void
+        onDragEnd?(e: google.maps.MapMouseEvent): void
+        onDragStart?(e: google.maps.MapMouseEvent): void
         onMouseDown?(e: google.maps.PolyMouseEvent): void
         onMouseMove?(e: google.maps.PolyMouseEvent): void
         onMouseOut?(e: google.maps.PolyMouseEvent): void
@@ -569,17 +569,17 @@ declare module 'react-google-maps/lib/components/Rectangle' {
         visible?: boolean
 
         onBoundsChanged?(): void
-        onClick?(e: google.maps.MouseEvent): void
-        onDblClick?(e: google.maps.MouseEvent): void
-        onDrag?(e: google.maps.MouseEvent): void
-        onDragEnd?(e: google.maps.MouseEvent): void
-        onDragStart?(e: google.maps.MouseEvent): void
-        onMouseDown?(e: google.maps.MouseEvent): void
-        onMouseMove?(e: google.maps.MouseEvent): void
-        onMouseOut?(e: google.maps.MouseEvent): void
-        onMouseOver?(e: google.maps.MouseEvent): void
-        onMouseUp?(e: google.maps.MouseEvent): void
-        onRightClick?(e: google.maps.MouseEvent): void
+        onClick?(e: google.maps.MapMouseEvent): void
+        onDblClick?(e: google.maps.MapMouseEvent): void
+        onDrag?(e: google.maps.MapMouseEvent): void
+        onDragEnd?(e: google.maps.MapMouseEvent): void
+        onDragStart?(e: google.maps.MapMouseEvent): void
+        onMouseDown?(e: google.maps.MapMouseEvent): void
+        onMouseMove?(e: google.maps.MapMouseEvent): void
+        onMouseOut?(e: google.maps.MapMouseEvent): void
+        onMouseOver?(e: google.maps.MapMouseEvent): void
+        onMouseUp?(e: google.maps.MapMouseEvent): void
+        onRightClick?(e: google.maps.MapMouseEvent): void
     }
 
     export default class Rectangle extends Component<RectangleProps> {

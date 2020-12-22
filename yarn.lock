@@ -8,9 +8,14 @@
   dependencies:
     "@types/googlemaps" "*"
 
-"@types/googlemaps@*", "@types/googlemaps@^3.29.2":
+"@types/googlemaps@*":
   version "3.30.4"
   resolved "https://registry.yarnpkg.com/@types/googlemaps/-/googlemaps-3.30.4.tgz#6f3ecd321b89e83b67685588189ece95aecdb4d2"
+
+"@types/googlemaps@^3.43.0":
+  version "3.43.0"
+  resolved "https://registry.yarnpkg.com/@types/googlemaps/-/googlemaps-3.43.0.tgz#e13e2aac873f1b7eab25648acf0c26f847ece4dd"
+  integrity sha512-4k6N1LKTmwHEG6zKNMfINqQS08jd3wYdmlBRfJpcKqUYC9A9uXzuO3irV6muI+PWg1DRAjlBuLfrQTmHNjzlGA==
 
 "@types/markerclustererplus@^2.1.33":
   version "2.1.33"
